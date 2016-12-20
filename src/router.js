@@ -6,8 +6,27 @@ import {
     Download,
     Docs
 } from 'pages'
+import menuList from 'src/menuList'
 
 Vue.use(VueRouter)
+
+let docsRoutes = []
+menuList.map(parent => {
+    if (parent.component) {
+        docsRoutes.push({
+            path: parent.routePath,
+            component: parent.component
+        })
+    }
+    parent.subMenu.map(child => {
+        docsRoutes.push({
+            path: `${parent.routePath}/${child.routePath}`,
+            component: child.component
+        })
+    })
+})
+
+console.log(docsRoutes)
 
 const routes = [
     {
@@ -21,12 +40,7 @@ const routes = [
     {
         path: '/docs',
         component: Docs,
-        children: [
-            {
-                path: 'button',
-                component: resolve => require(['docs/README.md'], resolve)
-            }
-        ]
+        children: docsRoutes
     }
 ]
 

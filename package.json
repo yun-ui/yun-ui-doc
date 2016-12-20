@@ -12,6 +12,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs"
   },
   "dependencies": {
+    "github-markdown-css": "^2.4.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "vue": "^2.0.1",
