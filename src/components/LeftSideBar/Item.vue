@@ -1,13 +1,15 @@
 <template>
-    <li>
-        <div @click="toggle">
+    <li class="docs-navbar-item">
+        <div @click="toggle" class="navbar-item-title">
             <router-link :to="{ path: path}" v-if="!isFolder">
                 {{data.title}}
             </router-link>
             <span v-else>{{data.title}}</span>
+            <small>{{data.secondary}}</small>
             {{hasParent}}
+            <i v-if="isFolder" :class="['iconfont', {'icon-arrow-down': open}, {'icon-arrow-up': !open}]"></i>
         </div>
-        <ul v-show="open" v-if="isFolder">
+        <ul v-show="open" v-if="isFolder" class="navbar-item-child">
             <menu-item
             v-for="item in data.subMenu"
             :data="item" :prefixpath="data.routePath">
@@ -52,3 +54,36 @@ export default {
     }
 }
 </script>
+
+<style lang="less">
+    .docs-navbar-item{
+        font-size: 15px;
+        .navbar-item-title{
+            cursor: pointer;
+            padding:8px 0;
+            .iconfont{
+                font-size:12px;
+                color: #98A1A8;
+            }
+            small{
+                padding-left:2px;
+                color: #98A1A8;
+            }
+            &.is-active{
+                color: #3cbaff;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        .navbar-item-child{
+            padding-left:20px;
+            .docs-navbar-item{
+                font-size:12px;
+            }
+            .navbar-item-title .icon-arrow-down{
+                display: none;
+            }
+        }
+    }
+</style>

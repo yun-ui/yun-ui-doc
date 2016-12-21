@@ -1,6 +1,6 @@
 <template>
     <section class="left-side-bar">
-        <ul id="demo">
+        <ul id="demo" class="docs-navbar">
             <menu-item
             v-for="item in menu"
             :data="item">
@@ -27,3 +27,10 @@ export default {
 
 }
 </script>
+
+<style lang="less">
+    .docs-navbar{
+        padding:50px 0 50px 50px;
+
+    }
+</style>

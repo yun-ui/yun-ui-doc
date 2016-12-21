@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import './css/reset.css'
+import './css/base.css'
 import './css/common.less'
 // import './css/github-gist.css'
 import 'github-markdown-css'
