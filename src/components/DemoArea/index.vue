@@ -18,7 +18,7 @@
     @demoHeight: 570px;
     .demo-area {
         position: relative;
-        padding: 50px 50px 0 50px;
+        padding: 50px 50px 0 0;
         .demo-title {
             margin-bottom: 32px;
         }
@@ -63,7 +63,7 @@
         cursor: pointer;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1300px) {
         .demo-area {
             display: none;
         }

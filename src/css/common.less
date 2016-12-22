@@ -70,17 +70,19 @@ a{
 /*====doc page====*/
 .page-doc {
     display: flex;
+    display: -webkit-box;
     .left-side-bar {
         min-width: 240px;
     }
 
     .main-doc-area {
         flex: 1;
-        padding:20px 0 50px 50px;
+        -webkit-box-flex: 1;
+        padding:20px 50px 50px;
     }
 
     .demo-area {
-        width:453px;
+        width:400px;
     }
 }
 /*====doc page====*/
