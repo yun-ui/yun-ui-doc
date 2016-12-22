@@ -26,8 +26,6 @@ menuList.map(parent => {
     })
 })
 
-console.log(docsRoutes)
-
 const routes = [
     {
         path: '/',
