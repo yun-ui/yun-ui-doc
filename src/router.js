@@ -45,7 +45,6 @@ const routes = [
 export default new VueRouter({
     component: Root,
     routes,
-    mode: 'history',
     base: __dirname,
     linkActiveClass: 'active'
 })
