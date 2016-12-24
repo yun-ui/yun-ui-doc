@@ -41,7 +41,7 @@ export default [
                 title: '字体',
                 secondary: 'Update Log',
                 routePath: 'font',
-                component: resolve => require(['docs/README3.md'], resolve)
+                component: resolve => require(['docs/README1.md'], resolve)
             },
             {
                 title: '图标',
