@@ -5,6 +5,10 @@
         </div>
         <div class="phone">
             <div class="demo-container">
+                <div class="demo-header">
+                    <span class="iconfont icon-arrow-left"></span>
+                    YunUI
+                </div>
                 <iframe></iframe>
             </div>
         </div>
@@ -38,11 +42,30 @@
             background: #637CA3;
             .demo-container {
                 position: absolute;
+                padding-top:44px;
                 top: 60px;
                 left: (@phoneWidth - @demoWidth)/2;
                 width: @demoWidth;
                 height: @demoHeight;
                 background: #EAEFF3;
+                .demo-header{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    right:0;
+                    height:44px;
+                    line-height: 44px;
+                    color: #ffffff;
+                    background-color: #3cbaff;
+                    text-align: center;
+                    .icon-arrow-left{
+                        position: absolute;
+                        display: block;
+                        width:44px;
+                        height:44px;
+                        cursor: pointer;
+                    }
+                }
                 iframe {
                     width: 100%;
                     height: 100%;
