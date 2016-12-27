@@ -1,36 +1,9 @@
 export default [
     {
-        title: '更新日志',
-        secondary: 'Update Log',
-        subMenu: [],
-        routePath: 'changelog',
-        component: resolve => require(['./documents/README.md'], resolve)
-    },
-    {
-        title: '没有子集没路由',
-        secondary: 'Update Log',
-        subMenu: [],
-        routePath: 'cs',
-        component: resolve => require(['./documents/README.md'], resolve)
-    },
-    {
-        title: '没有子集有路由',
-        secondary: 'Update Log',
-        subMenu: [],
-        routePath: 'b',
-        component: resolve => require(['./documents/README.md'], resolve)
-    },
-    {
-        title: '基础组件',
+        title: '基础样式',
         secondary: 'Basic CSS',
         routePath: 'basic',
         subMenu: [
-            {
-                title: '布局',
-                secondary: 'Layout',
-                routePath: 'layout',
-                component: resolve => require(['./documents/README.md'], resolve)
-            },
             {
                 title: '颜色',
                 secondary: 'Color',
@@ -38,21 +11,71 @@ export default [
                 component: resolve => require(['./documents/README.md'], resolve)
             },
             {
-                title: '字体',
-                secondary: 'Update Log',
-                routePath: 'font',
+                title: '布局',
+                secondary: 'Layout',
+                routePath: 'layout',
                 component: resolve => require(['./documents/README.md'], resolve)
             },
             {
-                title: '图标',
-                secondary: 'Update Log',
-                routePath: 'icons',
+                title: '辅助类',
+                secondary: 'Utility',
+                routePath: 'utility',
+                component: resolve => require(['./documents/README.md'], resolve)
+            },
+            {
+                title: '文字排版',
+                secondary: 'Typography',
+                routePath: 'typography',
+                component: resolve => require(['./documents/README.md'], resolve)
+            },
+            {
+                title: '状态页',
+                secondary: 'StatePage',
+                routePath: 'statePage',
+                component: resolve => require(['./documents/README.md'], resolve)
+            }
+        ]
+    },
+    {
+        title: '基础组件',
+        secondary: 'Basic component',
+        routePath: 'component',
+        subMenu: [
+            {
+                title: 'Navbar',
+                secondary: 'Navbar',
+                routePath: 'navbar',
+                component: resolve => require(['./documents/README.md'], resolve)
+            },
+            {
+                title: 'tabbar',
+                secondary: 'Tabbar',
+                routePath: 'tabbar',
                 component: resolve => require(['./documents/README.md'], resolve)
             },
             {
                 title: '按钮',
-                secondary: 'Update Log',
-                routePath: 'buttons',
+                secondary: 'Button',
+                routePath: 'button',
+                component: resolve => require(['./documents/README.md'], resolve)
+            },
+            {
+                title: '按钮组',
+                secondary: 'Button Group',
+                routePath: 'buttongroup',
+                component: resolve => require(['./documents/README.md'], resolve)
+            }
+        ]
+    },
+    {
+        title: '表单组件',
+        secondary: 'Form component',
+        routePath: 'form',
+        subMenu: [
+            {
+                title: 'Cell',
+                secondary: 'Cell',
+                routePath: 'cell',
                 component: resolve => require(['./documents/README.md'], resolve)
             }
         ]

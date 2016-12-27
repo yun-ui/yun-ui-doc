@@ -15,12 +15,14 @@ menuList.map(parent => {
     if (parent.component) {
         docsRoutes.push({
             path: parent.routePath,
+            name: parent.routePath,
             component: parent.component
         })
     }
     parent.subMenu.map(child => {
         docsRoutes.push({
             path: `${parent.routePath}/${child.routePath}`,
+            name: child.routePath,
             component: child.component
         })
     })
@@ -29,6 +31,9 @@ menuList.map(parent => {
 const routes = [
     {
         path: '/',
+        redirect: to => {
+            return `/docs/${docsRoutes[0].path}`
+        },
         component: Home
     },
     {
@@ -42,9 +47,18 @@ const routes = [
     }
 ]
 
-export default new VueRouter({
+const router = new VueRouter({
     component: Root,
     routes,
     base: __dirname,
     linkActiveClass: 'active'
 })
+
+router.beforeEach((to, from, next) => {
+    if (window.frames[0]) {
+        window.frames[0].postMessage({redirectName: to.name}, '*')
+    }
+    next()
+})
+
+export default router

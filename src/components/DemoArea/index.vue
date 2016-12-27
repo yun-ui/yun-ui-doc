@@ -1,11 +1,8 @@
 <template>
     <section class="demo-area">
-        <div class="clearfix demo-title">
-            <button class="preview-button"><i class="iconfont icon-close"></i>关闭预览</button>
-        </div>
         <div class="phone">
             <div class="demo-container">
-                <iframe></iframe>
+                <iframe src="https://yun-ui.github.io/yun-ui/" id="demoIframe"></iframe>
             </div>
         </div>
     </section>
