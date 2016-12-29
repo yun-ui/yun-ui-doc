@@ -46,11 +46,10 @@ const routes = [
         children: docsRoutes
     }
 ]
-
 const router = new VueRouter({
     component: Root,
     routes,
-    base: __dirname,
+    base: '/yun-ui-doc/',
     linkActiveClass: 'active'
 })
 
