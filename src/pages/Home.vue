@@ -29,12 +29,15 @@
 </template>
 
 <style lang="less">
+    .index-page{
+        background: #3cbaff url("../assets/wavy.png") no-repeat left bottom/ 100% 220px;
+    }
     .index-page-content{
-        min-width:1300px;
+        width:1200px;
+        margin: 0 auto;
         overflow: hidden;
         color: #ffffff;
-        padding:174px 0 40px 200px;
-        background: #3cbaff url("../assets/wavy.png") no-repeat left bottom/ 100% 220px;
+        padding:174px 0 40px 0;
         .photo-images{
             width:468px;
             float: left;
@@ -87,6 +90,7 @@
                 }
                 .enter-item-resources{
                     margin-top:47px;
+                    margin-bottom: 10px;
                     width:90px;
                 }
                 span{
