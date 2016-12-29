@@ -31,9 +31,6 @@ menuList.map(parent => {
 const routes = [
     {
         path: '/',
-        redirect: to => {
-            return `/docs/${docsRoutes[0].path}`
-        },
         component: Home
     },
     {
@@ -43,7 +40,10 @@ const routes = [
     {
         path: '/docs',
         component: Docs,
-        children: docsRoutes
+        children: docsRoutes,
+        redirect: to => {
+            return `/docs/${docsRoutes[0].path}`
+        }
     }
 ]
 const router = new VueRouter({
