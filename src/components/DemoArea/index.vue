@@ -2,10 +2,10 @@
     <section class="demo-area">
         <div class="phone">
             <div class="demo-container">
-                <div class="demo-header">
+                <!--<div class="demo-header">
                     <span class="iconfont icon-arrow-left"></span>
                     YunUI
-                </div>
+                </div>-->
                 <iframe src="https://yun-ui.github.io/yun-ui/" id="demoIframe"></iframe>
             </div>
         </div>
@@ -17,12 +17,15 @@
     @phoneHeight: 690px;
     @demoWidth: 320px;
     @demoHeight: 570px;
+    
     .demo-area {
         position: relative;
         padding: 50px 50px 0 0;
+
         .demo-title {
             margin-bottom: 32px;
         }
+
         .preview-button {
             float: right;
             background-color: #3cbaff;
@@ -31,12 +34,14 @@
             padding: 0 18px;
             border-radius: 4px;
         }
+
         .phone {
             position: relative;
             width: @phoneWidth;
             height: @phoneHeight;
             border-radius: 32px;
             background: #637CA3;
+
             .demo-container {
                 position: absolute;
                 padding-top:44px;
@@ -45,24 +50,7 @@
                 width: @demoWidth;
                 height: @demoHeight;
                 background: #EAEFF3;
-                .demo-header{
-                    position: absolute;
-                    top:0;
-                    left:0;
-                    right:0;
-                    height:44px;
-                    line-height: 44px;
-                    color: #ffffff;
-                    background-color: #3cbaff;
-                    text-align: center;
-                    .icon-arrow-left{
-                        position: absolute;
-                        display: block;
-                        width:44px;
-                        height:44px;
-                        cursor: pointer;
-                    }
-                }
+
                 iframe {
                     width: 100%;
                     height: 100%;
