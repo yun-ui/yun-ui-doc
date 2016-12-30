@@ -30,7 +30,7 @@
 
 <style lang="less">
     .index-page{
-        background: #3cbaff url("../assets/wavy.png") no-repeat left bottom/ 100% 220px;
+        background:#3cbaff url("../assets/wavy.png") no-repeat left bottom 98px content-box/ 100% 215px;
     }
     .index-page-content{
         width:1200px;
@@ -104,8 +104,8 @@
     footer.copyright{
         font-size:12px;
         text-align: center;
-        height: 100px;
-        line-height: 100px;
+        height: 98px;
+        line-height: 98px;
         background-color: #ffffff;
         color: #98A0AA;
         .ui-name{
