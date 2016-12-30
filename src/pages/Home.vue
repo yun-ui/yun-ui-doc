@@ -32,7 +32,10 @@
 
 <style lang="less">
     .index-page{
-        background:#3cbaff url("../assets/wavy.png") no-repeat left bottom 98px content-box/ 100% 215px;
+        background:url("../assets/wavy.png") #3cbaff  no-repeat content-box;
+        background-position: left bottom 98px ;
+        -webkit-background-size: 100% 215px;
+        background-size: 100% 215px;
     }
     .index-page-content{
         width:1200px;
