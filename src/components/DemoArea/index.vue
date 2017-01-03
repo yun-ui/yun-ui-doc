@@ -44,17 +44,14 @@
 
             .demo-container {
                 position: absolute;
-                padding-top:44px;
                 top: 60px;
                 left: (@phoneWidth - @demoWidth)/2;
                 width: @demoWidth;
                 height: @demoHeight;
                 background: #EAEFF3;
-
                 iframe {
                     width: 100%;
                     height: 100%;
-                    overflow-y: auto;
                 }
             }
         }

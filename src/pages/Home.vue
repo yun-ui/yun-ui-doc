@@ -9,13 +9,15 @@
                 <h2 class="slogan">让开发更有趣</h2>
                 <h2 class="translation">Real simple. Real fun.</h2>
                 <div class="enter-content">
+                    <div class="enter-item">
                     <router-link :to="{path: '/docs'}">
-                        <div class="enter-item">
+
                             <img class="enter-item-component" src="../assets/component.png" />
                             <h3>组件</h3>
                             <span>Component</span>
-                        </div>
+
                     </router-link>
+                    </div>
                     <div class="enter-item">
                         <img class="enter-item-resources" src="../assets/resources.png" />
                         <h3>资源</h3>
@@ -82,6 +84,9 @@
                 border-radius: 10px;
                 margin-right: 50px;
                 cursor: pointer;
+                a{
+                    text-decoration: none;
+                }
                 &:last-child{
                     margin-right: 0;
                 }

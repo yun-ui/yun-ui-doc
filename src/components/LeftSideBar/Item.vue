@@ -7,7 +7,7 @@
             <span v-else>{{data.title}}</span>
             <small>{{data.secondary}}</small>
             {{hasParent}}
-            <i v-if="isFolder" :class="['iconfont', {'icon-arrow-down': open}, {'icon-arrow-up': !open}]"></i>
+            <i v-if="isFolder" :class="['iconfont', {'icon-arrow-down': open}, {'icon-arrow-right': !open}]"></i>
         </div>
         <ul v-show="open" v-if="isFolder" class="navbar-item-child">
             <menu-item
