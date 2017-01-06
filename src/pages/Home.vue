@@ -19,23 +19,24 @@
                     </router-link>
                     </div>
                     <div class="enter-item">
-                        <img class="enter-item-resources" src="../assets/resources.png" />
-                        <h3>资源</h3>
-                        <span>Resources</span>
+                        <router-link :to="{path: '/resources'}">
+
+                            <img class="enter-item-resources" src="../assets/resources.png" />
+                            <h3>资源</h3>
+                            <span>Resources</span>
+
+                        </router-link>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="copyright">
-            <span class="ui-name">YunUI</span><span>© 1993-2016 金蝶国际软件集团有限公司版权所有粤ICP备05041751号</span>
-        </footer>
+
     </div>
 </template>
 
 <style lang="less">
     .index-page{
-        background:url("../assets/wavy.png") #3cbaff  no-repeat content-box;
-        background-position: left bottom 98px ;
+        background:url("../assets/wavy.png") #3cbaff  no-repeat left bottom content-box;
         -webkit-background-size: 100% 215px;
         background-size: 100% 215px;
     }
@@ -109,18 +110,6 @@
                     color: #7A797B;
                 }
             }
-        }
-    }
-    footer.copyright{
-        font-size:12px;
-        text-align: center;
-        height: 98px;
-        line-height: 98px;
-        background-color: #ffffff;
-        color: #98A0AA;
-        .ui-name{
-            font-size:16px;
-            margin-right:18px;
         }
     }
 </style>

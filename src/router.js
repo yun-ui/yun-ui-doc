@@ -4,7 +4,8 @@ import {
     Root,
     Home,
     Download,
-    Docs
+    Docs,
+    Resources
 } from 'pages'
 import menuList from 'src/menuList'
 
@@ -44,6 +45,10 @@ const routes = [
         redirect: to => {
             return `/docs/${docsRoutes[0].path}`
         }
+    },
+    {
+        path: '/resources',
+        component: Resources
     }
 ]
 const router = new VueRouter({
