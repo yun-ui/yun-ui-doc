@@ -1,6 +1,6 @@
 <template>
     <div class="wrap">
-        <y-header></y-header>
+        <!--<y-header></y-header>-->
         <main-menu></main-menu>
         <router-view></router-view>
         <y-footer></y-footer>
