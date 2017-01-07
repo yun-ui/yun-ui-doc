@@ -1,24 +1,64 @@
 <template>
     <section class="demo-area">
         <div class="phone">
-            <a class="btn-QR-code">
+            <a class="btn-QR-code" @click="getIframeUrl">
                 <img src="../../assets/qrCode.png">
             </a>
-            <div class="QR-code-container">
-                <div class="QR-code"></div>
+            <div class="QR-code-container" v-show="qrcode">
+                <div class="QR-code">
+                    <canvas width="100" height="100" id="qrcode"></canvas>
+                </div>
                 <p>扫码在手机预览</p>
             </div>
             <div class="demo-container">
-                <!--<div class="demo-header">
-                    <span class="iconfont icon-arrow-left"></span>
-                    YunUI
-                </div>-->
                 <iframe src="https://yun-ui.github.io/yun-ui/" id="demoIframe"></iframe>
+                <!--<iframe src="http://localhost:8089" id="demoIframe"></iframe>-->
+                <div>
+                </div>
             </div>
         </div>
     </section>
 </template>
 
+<script>
+import QRCode from 'qrcode'
+
+export default {
+    data () {
+        return {
+            qrcode: false
+        }
+    },
+    methods: {
+        getIframeUrl () {
+            if (this.qrcode === true) {
+                this.qrcode = !this.qrcode
+                return
+            }
+            document.getElementById('demoIframe').contentWindow.postMessage({type: 'GETCURRENTURL'}, '*')
+            this.qrcode = !this.qrcode
+        },
+        genQrCode (url) {
+            console.log(url)
+            const canvas = document.getElementById('qrcode')
+            const QRCodeDraw = new QRCode.QRCodeDraw()
+
+            QRCodeDraw.draw(canvas, url, function (error, canvas) {
+                if (error) console.error(error)
+                console.log('success!')
+            })
+        }
+    },
+    mounted () {
+        window.addEventListener('message', (e) => {
+            if (e.data.demoUrl) {
+                this.genQrCode(e.data.demoUrl)
+            }
+        })
+    },
+    destoryed () {}
+}
+</script>
 <style lang="less">
     @phoneWidth: 352px;
     @phoneHeight: 690px;
@@ -78,7 +118,6 @@
                     margin-bottom: 10px;
                     width:100px;
                     height:100px;
-                    background-color: #3CBAFF;
                 }
             }
             .demo-container {
