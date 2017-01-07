@@ -1,2 +1,0 @@
-webpackJsonp([6,21],{50:function(t,n,e){var r,o,i=e(63);o=r=r||{},"object"!=typeof r.default&&"function"!=typeof r.default||(o=r=r.default),"function"==typeof o&&(o=o.options),o.render=i.render,o.staticRenderFns=i.staticRenderFns,t.exports=r},63:function(t,n){t.exports={render:function(){var t=this;return t._m(0)},staticRenderFns:[function(){var t=this;return t._h("section",[t._h("h1",["快速上手"])])}]}},105:function(t,n,e){t.exports=e(50)}});
-//# sourceMappingURL=6.51e8b08a2873a46a0bba.js.map
