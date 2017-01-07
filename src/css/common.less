@@ -48,6 +48,10 @@ a{
         line-height: 98px;
         margin-left: 50px;
         cursor: pointer;
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
     }
 
     ul {
@@ -60,16 +64,18 @@ a{
             height: 98px;
             line-height: 98px;
             color: #fff;
-            opacity: 0.5;
-            margin-left: 40px;
+            margin-left: 10px;
             font-size: 14px;
             cursor: pointer;
-            &.active {
-                opacity: 1;
-            }
             a{
+                border-radius: 16px;
+                padding:5px 24px;
                 color:#ffffff;
                 text-decoration: none;
+                &.active{
+                    color: #3cbaff;
+                    background-color: #ffffff;
+                }
             }
         }
     }

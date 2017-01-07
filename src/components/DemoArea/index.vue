@@ -1,6 +1,13 @@
 <template>
     <section class="demo-area">
         <div class="phone">
+            <a class="btn-QR-code">
+                <img src="../../assets/qrCode.png">
+            </a>
+            <div class="QR-code-container">
+                <div class="QR-code"></div>
+                <p>扫码在手机预览</p>
+            </div>
             <div class="demo-container">
                 <!--<div class="demo-header">
                     <span class="iconfont icon-arrow-left"></span>
@@ -41,13 +48,40 @@
             height: @phoneHeight;
             border-radius: 32px;
             background: #637CA3;
-
-            .demo-container {
+            .btn-QR-code{
+                position: absolute;
+                top:16px;
+                right:16px;
+                display: block;
+                width:28px;
+                cursor: pointer;
+                overflow: hidden;
+                img{
+                    max-width: 100%;
+                }
+            }
+            .QR-code-container,
+            .demo-container{
                 position: absolute;
                 top: 60px;
                 left: (@phoneWidth - @demoWidth)/2;
                 width: @demoWidth;
                 height: @demoHeight;
+            }
+            .QR-code-container{
+                background: rgba(255,255,255,0.8);
+                z-index:2;
+                text-align: center;
+                .QR-code{
+                    margin-top: @demoHeight/2 - 70;
+                    margin-left: @demoWidth/2 - 50;
+                    margin-bottom: 10px;
+                    width:100px;
+                    height:100px;
+                    background-color: #3CBAFF;
+                }
+            }
+            .demo-container {
                 background: #EAEFF3;
                 iframe {
                     width: 100%;

@@ -74,6 +74,12 @@ export default {
         }
         a{
             text-decoration: none;
+            &.active{
+                color: #3cbaff;
+                small{
+                    color: inherit;
+                }
+            }
         }
         .navbar-item-child{
             padding-left:20px;
