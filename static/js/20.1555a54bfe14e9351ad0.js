@@ -1,0 +1,2 @@
+webpackJsonp([20,21],{54:function(n,t,e){var r,o,i=e(94);o=r=r||{},"object"!=typeof r.default&&"function"!=typeof r.default||(o=r=r.default),"function"==typeof o&&(o=o.options),o.render=i.render,o.staticRenderFns=i.staticRenderFns,n.exports=r},94:function(n,t){n.exports={render:function(){var n=this;return n._m(0)},staticRenderFns:[function(){var n=this;return n._h("section",[n._h("h1",["关于yunui"])])}]}},120:function(n,t,e){n.exports=e(54)}});
+//# sourceMappingURL=20.1555a54bfe14e9351ad0.js.map

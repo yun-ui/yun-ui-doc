@@ -1,0 +1,2 @@
+webpackJsonp([4,21],{70:function(t,n,e){var r,o,i=e(107);o=r=r||{},"object"!=typeof r.default&&"function"!=typeof r.default||(o=r=r.default),"function"==typeof o&&(o=o.options),o.render=i.render,o.staticRenderFns=i.staticRenderFns,t.exports=r},107:function(t,n){t.exports={render:function(){var t=this;return t._m(0)},staticRenderFns:[function(){var t=this;return t._h("section",[t._h("h1",["状态页"])])}]}},126:function(t,n,e){t.exports=e(70)}});
+//# sourceMappingURL=4.b0dad10f363532f5b3be.js.map
