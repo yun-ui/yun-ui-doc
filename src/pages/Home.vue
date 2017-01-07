@@ -13,7 +13,7 @@
                     <router-link :to="{path: '/docs'}">
 
                             <img class="enter-item-component" src="../assets/component.png" />
-                            <h3>组件</h3>
+                            <h3>文档</h3>
                             <span>Component</span>
 
                     </router-link>

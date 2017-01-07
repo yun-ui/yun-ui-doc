@@ -2,10 +2,9 @@
     <li class="docs-navbar-item">
         <div @click="toggle" class="navbar-item-title">
             <router-link :to="{ path: path}" v-if="!isFolder">
-                {{data.title}}
+                {{data.title}} <small>{{data.secondary}}</small>
             </router-link>
             <span v-else>{{data.title}}</span>
-            <small>{{data.secondary}}</small>
             {{hasParent}}
             <i v-if="isFolder" :class="['iconfont', {'icon-arrow-down': open}, {'icon-arrow-right': !open}]"></i>
         </div>
