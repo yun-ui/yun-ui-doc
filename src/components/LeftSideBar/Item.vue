@@ -1,7 +1,7 @@
 <template>
     <li class="docs-navbar-item">
         <div @click="toggle" class="navbar-item-title">
-            <router-link :to="{ path: path}" v-if="!isFolder">
+            <router-link :to="{ path: path}" v-if="!isFolder" exact>
                 {{data.title}} <small>{{data.secondary}}</small>
             </router-link>
             <span v-else>{{data.title}}</span>
