@@ -2,13 +2,14 @@
     <section class="demo-area">
         <div class="phone">
             <a class="btn-QR-code" @click="getIframeUrl">
-                <img src="../../assets/qrCode.png">
+                <img src="../../assets/eyes.png">
+                <span> 预览</span>
             </a>
             <div class="QR-code-container" v-show="qrcode">
                 <div class="QR-code">
                     <canvas width="100" height="100" id="qrcode"></canvas>
+                    <p>扫码在手机预览</p>
                 </div>
-                <p>扫码在手机预览</p>
             </div>
             <div class="demo-container">
                 <iframe src="https://yun-ui.github.io/yun-ui/" id="demoIframe"></iframe>
@@ -93,11 +94,19 @@ export default {
                 top:16px;
                 right:16px;
                 display: block;
-                width:28px;
+                padding:0 10px;
+                line-height: 32px;
                 cursor: pointer;
                 overflow: hidden;
+                background-color: #3CBAFF;
+                color: #ffffff;
+                vertical-align: middle;
+                border-radius: 20px;
                 img{
-                    max-width: 100%;
+                    max-width:24px;
+                }
+                >*{
+                    vertical-align: middle;
                 }
             }
             .QR-code-container,
@@ -113,11 +122,15 @@ export default {
                 z-index:2;
                 text-align: center;
                 .QR-code{
-                    margin-top: @demoHeight/2 - 70;
-                    margin-left: @demoWidth/2 - 50;
-                    margin-bottom: 10px;
-                    width:100px;
-                    height:100px;
+                    position: absolute;
+                    top:50%;
+                    width:100%;
+                    margin-top:-80px;
+                    canvas{
+                        width:140px;
+                        height:140px;
+                        margin:0 auto;
+                    }
                 }
             }
             .demo-container {

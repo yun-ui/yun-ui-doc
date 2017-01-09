@@ -56,7 +56,7 @@ export default {
 
 <style lang="less">
     .docs-navbar-item{
-        font-size: 15px;
+        /*font-size: 16px;*/
         .navbar-item-title{
             cursor: pointer;
             padding:8px 0;
@@ -84,7 +84,7 @@ export default {
         .navbar-item-child{
             padding-left:20px;
             .docs-navbar-item{
-                font-size:12px;
+                font-size:14px;
             }
             .navbar-item-title .icon-arrow-down{
                 display: none;

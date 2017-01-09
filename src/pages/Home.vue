@@ -14,7 +14,7 @@
 
                             <img class="enter-item-component" src="../assets/component.png" />
                             <h3>文档</h3>
-                            <span>Component</span>
+                            <span>Document</span>
 
                     </router-link>
                     </div>

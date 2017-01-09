@@ -31,6 +31,7 @@
             border-bottom: 1px solid #f7f7f7;
         }
         h3{
+            margin-top:50px;
             font-size:20px;
         }
         h4{
@@ -66,6 +67,7 @@
         thead th,
         tbody td{
             border:none;
+            min-width:100px;
         }
     }
 </style>
