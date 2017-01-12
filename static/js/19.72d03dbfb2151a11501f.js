@@ -1,2 +1,0 @@
-webpackJsonp([19,21],{55:function(t,n,e){var o,r,i=e(96);r=o=o||{},"object"!=typeof o.default&&"function"!=typeof o.default||(r=o=o.default),"function"==typeof r&&(r=r.options),r.render=i.render,r.staticRenderFns=i.staticRenderFns,t.exports=o},96:function(t,n){t.exports={render:function(){var t=this;return t._m(0)},staticRenderFns:[function(){var t=this;return t._h("section",[t._h("h1",["action sheet"])])}]}},115:function(t,n,e){t.exports=e(55)}});
-//# sourceMappingURL=19.72d03dbfb2151a11501f.js.map

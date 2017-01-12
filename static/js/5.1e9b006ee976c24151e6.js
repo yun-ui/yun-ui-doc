@@ -1,0 +1,2 @@
+webpackJsonp([5,21],{70:function(t,n,e){var o,r,i=e(92);r=o=o||{},"object"!=typeof o.default&&"function"!=typeof o.default||(r=o=o.default),"function"==typeof r&&(r=r.options),r.render=i.render,r.staticRenderFns=i.staticRenderFns,t.exports=o},92:function(t,n){t.exports={render:function(){var t=this;return t._m(0)},staticRenderFns:[function(){var t=this;return t._h("section",[t._h("h1",["Color"])])}]}},125:function(t,n,e){t.exports=e(70)}});
+//# sourceMappingURL=5.1e9b006ee976c24151e6.js.map

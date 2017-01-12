@@ -1,0 +1,2 @@
+webpackJsonp([6,21],{69:function(t,n,e){var r,o,i=e(82);o=r=r||{},"object"!=typeof r.default&&"function"!=typeof r.default||(o=r=r.default),"function"==typeof o&&(o=o.options),o.render=i.render,o.staticRenderFns=i.staticRenderFns,t.exports=r},82:function(t,n){t.exports={render:function(){var t=this;return t._m(0)},staticRenderFns:[function(){var t=this;return t._h("section",[t._h("h1",["更新日志"])])}]}},123:function(t,n,e){t.exports=e(69)}});
+//# sourceMappingURL=6.2cb3e82308cfd0166728.js.map
