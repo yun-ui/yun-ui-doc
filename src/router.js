@@ -58,11 +58,11 @@ const router = new VueRouter({
     linkActiveClass: 'active'
 })
 
-router.beforeEach((to, from, next) => {
+/* router.beforeEach((to, from, next) => {
     if (window.frames[0]) {
         window.frames[0].postMessage({redirectName: to.name}, '*')
     }
     next()
-})
+}) */
 
 export default router

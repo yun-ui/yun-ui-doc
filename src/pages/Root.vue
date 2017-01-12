@@ -8,13 +8,29 @@
 </template>
 
 <script>
-import { Header, MainMenu, Footer } from 'components'
+    import {Header, MainMenu, Footer} from 'components'
 
-export default {
-    components: {
-        'y-header': Header,
-        MainMenu,
-        'y-footer': Footer
+    export default {
+        components: {
+            'y-header': Header,
+            MainMenu,
+            'y-footer': Footer
+        },
+        watch: {
+            '$route' (to, from) {
+                if (window.frames[0]) {
+                    window.frames[0].postMessage({ redirectName: to.name }, window.location.origin)
+                }
+            }
+        },
+        created () {
+            window.addEventListener('message', e => {
+                if (e.data && e.data.ready === true) {
+                    if (window.frames[0]) {
+                        window.frames[0].postMessage({ redirectName: this.$route.name }, window.location.origin)
+                    }
+                }
+            }, false)
+        }
     }
-}
 </script>
