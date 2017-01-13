@@ -69,5 +69,45 @@
             border:none;
             min-width:100px;
         }
+
+        .theme-color{
+            color: #ffffff;
+            text-align: center;
+            width:200px;
+            line-height: 60px;
+            border-radius: 4px;
+            display: block;
+        }
+        ul.color{
+            padding-left:0;
+            font-size:0;
+            li{
+                width:100px;
+                height:44px;
+                line-height: 44px;
+                display: inline-block;
+                margin:10px 20px 10px 0;
+                text-align: center;
+                border-radius: 4px;
+                font-size:12px;
+            }
+        }
+        ul.font-color{
+            li{
+                width:140px;
+            }
+        }
+        ul.page-color{
+            li.mask-color{
+                color: #ffffff;
+                background: rgba(12,33,63,0.80);
+            }
+            li.bg-color{
+                background: #eaeff3;
+            }
+            li.border-color{
+                background: #dce1e8;
+            }
+        }
     }
 </style>
