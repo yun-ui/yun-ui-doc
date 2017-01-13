@@ -1,2 +1,0 @@
-webpackJsonp([8,21],{67:function(t,n,e){var r,o,i=e(90);o=r=r||{},"object"!=typeof r.default&&"function"!=typeof r.default||(o=r=r.default),"function"==typeof o&&(o=o.options),o.render=i.render,o.staticRenderFns=i.staticRenderFns,t.exports=r},90:function(t,n){t.exports={render:function(){var t=this;return t._m(0)},staticRenderFns:[function(){var t=this;return t._h("section",[t._h("h1",["Badge"])])}]}},109:function(t,n,e){t.exports=e(67)}});
-//# sourceMappingURL=8.1bb4c29ad12794639245.js.map
