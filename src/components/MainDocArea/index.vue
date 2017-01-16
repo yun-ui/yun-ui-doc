@@ -82,7 +82,7 @@
             padding-left:0;
             font-size:0;
             li{
-                width:100px;
+                width:110px;
                 height:44px;
                 line-height: 44px;
                 display: inline-block;
@@ -107,6 +107,49 @@
             }
             li.border-color{
                 background: #dce1e8;
+            }
+        }
+        ul.icon-list{
+            padding:0;
+            li {
+                display: inline-block;
+                vertical-align: top;
+                width:110px;
+                text-align: center;
+                font-size:12px;
+                margin-bottom: 30px;
+                .iconfont{
+                    color: #777;
+                    cursor: pointer;
+                    font-size:40px;
+                    &:hover{
+                        color: #3cbaff;
+                    }
+                }
+            }
+        }
+        .utility-position{
+            overflow: hidden;
+            margin-bottom: 20px;
+            >div{
+                border-radius: 4px;
+                text-align: center;
+                width:120px;
+                border:1px solid #dce1e8;
+            }
+        }
+        .utility-border{
+            .yun-border{
+                background-color: rgba(0,0,0,.02);
+                padding:10px;
+                margin-bottom: 10px;
+            }
+        }
+        .utility-divided{
+            padding:10px 0;
+            >span{
+                padding:0 20px;
+                margin-bottom: 10px;
             }
         }
     }
