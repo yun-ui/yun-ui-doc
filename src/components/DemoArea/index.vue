@@ -63,7 +63,7 @@ export default {
 <style lang="less">
     @phoneWidth: 352px;
     @phoneHeight: 690px;
-    @demoWidth: 320px;
+    @demoWidth: 332px;
     @demoHeight: 570px;
     
     .demo-area {
