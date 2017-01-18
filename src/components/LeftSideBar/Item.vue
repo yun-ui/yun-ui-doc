@@ -56,7 +56,7 @@ export default {
 
 <style lang="less">
     .docs-navbar-item{
-        /*font-size: 16px;*/
+        font-size: 16px;
         .navbar-item-title{
             cursor: pointer;
             padding:8px 0;

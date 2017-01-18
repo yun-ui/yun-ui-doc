@@ -1,6 +1,6 @@
 export default [
     {
-        title: '关于yunui',
+        title: 'YunUI of Vue.js',
         secondary: 'About',
         routePath: 'about',
         subMenu: [],
