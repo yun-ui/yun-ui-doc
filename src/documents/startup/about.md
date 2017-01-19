@@ -15,7 +15,7 @@ Safari、Chrome、UC、云之家内置浏览器等手机端浏览器。
 
 ## 版本
 
-- 稳定版 [![npm package](https://img.shields.io/npm/v/yun-ui.svg?style=flat-square)](https://www.npmjs.org/package/yun-ui)
+- 最新版 [![npm package](https://img.shields.io/npm/v/yun-ui.svg?style=flat-square)](https://www.npmjs.org/package/yun-ui)
 
 ## 安装
 

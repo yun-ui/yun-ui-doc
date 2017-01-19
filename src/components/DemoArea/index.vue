@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="demo-container">
-                <iframe src="https://yun-ui.github.io/yun-ui/" id="demoIframe"></iframe>
+                <iframe src="/yun-ui/" id="demoIframe"></iframe>
                 <!--<iframe src="http://localhost:8089" id="demoIframe"></iframe>-->
                 <div>
                 </div>
