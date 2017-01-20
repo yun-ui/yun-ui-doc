@@ -44,7 +44,7 @@
         margin: 0 auto;
         overflow: hidden;
         color: #ffffff;
-        padding:174px 0 40px 0;
+        padding:100px 0 40px 0;
         .photo-images{
             width:468px;
             float: left;
@@ -94,14 +94,10 @@
                     color: #3cbaff;
                     font-size:16px;
                 }
-                .enter-item-component{
-                    margin-top:35px;
-                    width:72px;
-                }
-                .enter-item-resources{
-                    margin-top:47px;
+                img{
+                    width:100px;
+                    margin-top:40px;
                     margin-bottom: 10px;
-                    width:90px;
                 }
                 span{
                     margin-top: 8px;

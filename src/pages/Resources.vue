@@ -6,7 +6,7 @@
         </div>
         <div class="panel-container">
             <div class="panel">
-                <img src="../assets/resources.png" />
+                <img src="../assets/resources-1.png" />
                 <h2>Sketch设计文档</h2>
                 <p>云之家标准视觉设计控件库<br/>快速开发出符合云之家标准的应用</p>
                 <a class="button" href="">下载</a>
