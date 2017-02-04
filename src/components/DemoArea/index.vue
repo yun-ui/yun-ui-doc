@@ -154,7 +154,7 @@ export default {
         cursor: pointer;
     }
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1260px) {
         .demo-area {
             display: none;
         }

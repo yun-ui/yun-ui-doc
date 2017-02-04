@@ -10,7 +10,7 @@
     @import "../../css/github-gist.css";
 
     .markdown-body{
-        min-width:600px;
+        min-width:540px;
         max-width: 800px;
         margin: 0 auto;
     }
