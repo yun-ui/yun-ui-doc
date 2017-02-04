@@ -21,6 +21,9 @@
                 if (window.frames[0]) {
                     window.frames[0].postMessage({ redirectName: to.name }, window.location.origin)
                 }
+                if (window.parent !== window) {
+                    window.parent.postMessage({ hashchange: to }, '*')
+                }
             }
         },
         created () {
