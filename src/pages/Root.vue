@@ -22,7 +22,15 @@
                     window.frames[0].postMessage({ redirectName: to.name }, window.location.origin)
                 }
                 if (window.parent !== window) {
-                    window.parent.postMessage({ hashchange: to }, '*')
+                    window.parent.postMessage({
+                        hashchange: {
+                            name: to.name,
+                            path: to.path,
+                            hash: to.hash,
+                            query: to.query,
+                            fullPath: to.fullPath
+                        }
+                    }, '*')
                 }
             }
         },
