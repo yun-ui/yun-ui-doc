@@ -69,8 +69,7 @@ export default {
 
     .demo-area {
         position: relative;
-        padding: 50px 50px 0 0;
-
+        padding-top: 50px;
         .demo-title {
             margin-bottom: 32px;
         }
@@ -85,7 +84,8 @@ export default {
         }
 
         .phone {
-            position: relative;
+            position: absolute;
+            right:50px;
             width: @phoneWidth;
             height: @phoneHeight;
             border-radius: 32px;
@@ -114,9 +114,9 @@ export default {
             .demo-container{
                 position: absolute;
                 top: 60px;
-                left: (@phoneWidth - @demoWidth)/2;
-                width: @demoWidth;
-                height: @demoHeight;
+                left: 10px;
+                right:10px;
+                bottom:40px;
             }
             .QR-code-container{
                 background: rgba(255,255,255,0.8);
