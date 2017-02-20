@@ -1,6 +1,6 @@
 <template>
     <section class="demo-area">
-        <div class="phone">
+        <div class="phone" :style="{ visibility: isInIframe ? 'hidden' : '' }">
             <a class="btn-QR-code" @click="getIframeUrl">
                 <img src="../../assets/eyes.png">
                 <span> 预览</span>
@@ -27,7 +27,8 @@ import QRCode from 'qrcode'
 export default {
     data () {
         return {
-            qrcode: false
+            qrcode: false,
+            isInIframe: window.parent !== window
         }
     },
     methods: {
@@ -65,7 +66,7 @@ export default {
     @phoneHeight: 690px;
     @demoWidth: 332px;
     @demoHeight: 570px;
-    
+
     .demo-area {
         position: relative;
         padding: 50px 50px 0 0;
