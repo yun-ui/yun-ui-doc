@@ -9,7 +9,7 @@
                 <img src="../assets/resources-1.png" />
                 <h2>Sketch设计文档</h2>
                 <p>云之家标准视觉设计控件库<br/>快速开发出符合云之家标准的应用</p>
-                <a class="button" href="http://ol3lgbdzu.bkt.clouddn.com/YunUI%E6%8E%A7%E4%BB%B6%E8%A7%84%E8%8C%830120.sketch.zip">下载</a>
+                <a class="button" href="https://ol3lgbdzu.bkt.clouddn.com/YunUI%E6%8E%A7%E4%BB%B6%E8%A7%84%E8%8C%830120.sketch.zip">下载</a>
             </div>
         </div>
     </div>
